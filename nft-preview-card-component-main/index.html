@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main id="container">
+      <div id="card">
+        <img
+          src="images/image-equilibrium.jpg"
+          alt="NTF Image"
+          class="card-img"
+        />
+        <h1 class="title">Equilibrium #3429</h1>
 
-  Equilibrium #3429
+        <p class="card-text">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
 
-  Our Equilibrium collection promotes balance and calm.
+        <div class="info">
+          <div class="value">
+            <img class="value-icon" src="images/icon-ethereum.svg" alt="" />
+            <p class="value-text">0.041 ETH</p>
+          </div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+          <div class="time">
+            <img class="time-icon" src="images/icon-clock.svg" alt="" />
+            <p class="time-availiable">3 days left</p>
+          </div>
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <span class="line"></span>
+
+        <div class="footer">
+          <img class="footer-img" src="images/img.png" alt="" />
+          <p class="footer-text">
+            Creation of
+            <span style="color: var(--mainWhite); padding-left: 1px"
+              >Fabrício Carvalho</span
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
