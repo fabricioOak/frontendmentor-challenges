@@ -41,16 +41,10 @@
 
 .card-img {
   width: 100%;
-  height: 50%;
+  height: 45%h;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-}
-
-.card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .title {
