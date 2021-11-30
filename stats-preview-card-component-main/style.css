@@ -15,9 +15,21 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--mainBackground);
+}
 
 #card {
   display: grid;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 800px;
+  height: 300px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
@@ -25,7 +37,68 @@
   justify-items: stretch;
   align-items: stretch;
   background-color: var(--cardBackground);
+  border-radius: 10px;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 10px 10px 0;
+}
+
+.lateral-padding {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 60px;
+  margin: 0 -35px 0 -15px;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--mainHeading-Stats);
+  margin-top: -30px;
+  padding-bottom: 10px;
+}
+
+.title span {
+  color: var(--accent);
+}
+.main-paragraph {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: var(--mainParagraph);
+  padding-bottom: 20px;
+}
+.data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 0;
+}
+
+.data-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: var(--statPeadings);
+  text-align: center;
+}
+
+.data-info h2 {
+  color: var(--mainHeading-Stats);
+}
+.data-info p {
+  color: var(--statPeadings);
+}
+/* Here goes to mobile */
 
 @media only screen and (max-width: 768px) {
   #container {
@@ -34,13 +107,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: var(--mainBackground);
   }
 
   #card {
     display: grid;
-    height: 700px;
+    height: 550px;
     width: 250px;
     border-radius: 10px;
     grid-template-columns: 1fr;
