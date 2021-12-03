@@ -75,13 +75,13 @@
 .value {
   display: flex;
   align-items: center;
+  filter: drop-shadow(0.1em 0.1em 0.7em #0fa);
 }
 
 .value-text {
   padding-left: 6px;
   color: var(--primaryCyan);
   font-weight: 600;
-  text-shadow: 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa;
 }
 
 .time {
